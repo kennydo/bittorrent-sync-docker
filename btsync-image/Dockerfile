@@ -13,7 +13,7 @@ RUN useradd --uid 1000 -m btsync
 # Download and install btsync
 RUN mkdir -p /opt/bittorrent && \
     cd /opt/bittorrent && \
-    curl -o btsync.tar.gz http://download.getsyncapp.com/endpoint/btsync/os/linux-x64/track/stable && \
+    curl -o btsync.tar.gz https://download-cdn.getsyncapp.com/stable/linux-x64/BitTorrent-Sync_x64.tar.gz && \
     tar -xzvf btsync.tar.gz && \
     rm btsync.tar.gz && \
     chmod a+x btsync && \
